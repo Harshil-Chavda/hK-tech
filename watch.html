@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>HK TECH.com</title>
+</head>
+
+<body>
+    <header>
+        <div class="navber">
+            <div class="nav-logo border">
+                <div class="logo">
+                    <a href="index.html">HK TECH</a>
+                </div>
+            </div>
+            <div class="nav-adders border">
+                <div class="nav-adders-item">
+                    <div class="first nav-line-1">
+                        <Pre>    Deliver to</Pre>
+                    </div>
+                    <div class="second nav-line-2">
+                        <i class="fa-solid fa-location-dot"></i> <span><b>India</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-search border">
+                <select class="search-select">
+                    <option value="text">All</option>
+                    <!-- <option value="text">Arts & Crafts</option>
+                    <option value="text">Automotive</option>
+                    <option value="text">Baby</option>
+                    <option value="text">Beauty & Personal Care</option>
+                    <option value="text">Books</option>
+                    <option value="text">Boy's Fashion</option>
+                    <option value="text">Computers</option>
+                    <option value="text">Deals</option>
+                    <option value="text">Digital Music</option>
+                    <option value="text">Electronics</option>
+                    <option value="text">Girls' Fashion</option>
+                    <option value="text">Home & Kitchen</option>
+                    <option value="text">Industrial & Scientific</option>
+                    <option value="text">Kindle Store</option>
+                    <option value="text">Men's Fashion</option>
+                    <option value="text">Movies & TV</option>
+                    <option value="text">Music, CDs & Vinyl</option>
+                    <option value="text">Pet Supplies</option>
+                    <option value="text">Prime Video</option>
+                    <option value="text">Sports & Outdoors</option>
+                    <option value="text">Tools & Home Improvement</option>
+                    <option value="text">Toys & Games</option>
+                    <option value="text">Video Games</option>
+                    <option value="text">Women's Fashion</option> -->
+                </select>
+                <input type="text" placeholder="Scarch HK TECH" class="search-input">
+                <div class="search-icon">
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-language border">
+                <select class="language">
+                    <option class="langs">EN</option>
+                    <option class="langs">HINDI</option>
+                    <option class="langs">ENGLISH</option>
+                </select>
+            </div>
+            <div class="nav-signin border">
+                <a href="sign-up.html"><span class="box5line2 nav-line-2">sign in</span></a>
+            </div>
+            <div class="nav-order border">
+                <p class="nav-line-1">Return</p>
+                <p class="nav-line-2">& Order</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                <span class="nav-line-2"> <a href="cart.html"
+                        style="color: white; text-decoration: none;">Cart</a></span>
+            </div>
+        </div>
+
+
+        <div class="subnavbar">
+            <div class="sub-manu">
+                <i class="fa-solid fa-bars"></i><span> All</span>
+            </div>
+            <div class="sub-ops">
+                <a href="TD.html">Today's Deals</a>
+                <a href="CS.html">Customer Service</a>
+                <a href="registry.html">Registry</a>
+                <a href="GC.html">Gift Cards</a>
+                <a href="sell.html">Sell</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="DOP">
+        <div class="filter-ops">
+            <p class="heading">Recently used filters</p>
+            <p>All Discounts</p>
+            <hr>
+            <p class="heading">Popular Shopping Ideas</p>
+            <p>Womens</p>
+            <p>Mens</p>
+            <p>Android</p>
+            <p>Kids</p>
+            <p>Tactical</p>
+            <p>Fitness</p>
+            <p>Gps</p>
+            <p>CameraSAMSUNG</p>
+
+
+            <p class="heading">Customer Reviews</p>
+            <p>4 Stars & Up</p>
+
+            <p class="heading">Brands</p>
+            <p>
+                <input type="checkbox" name="" id="SAMSUNG"><label for="SAMSUNG">SAMSUNG</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="Apple"><label for="Apple">Apple</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="Amazfit"><label for="Amazfit">Amazfit</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="TOZO"><label for="TOZO">TOZO</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="Nerunsa"><label for="Nerunsa">Nerunsa</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="SUNKTA"><label for="SUNKTA">SUNKTA</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="Popglory"><label for="Popglory">Popglory</label>
+            </p>
+            <P class="heading">All Top Brands</P>
+            <p>
+                <input type="checkbox" name="" id="top-brand"><label for="top-brand">Top-Brand</label>
+            </p>
+            <p class="heading">Price</p>
+            <p class="heading">$3 - $930+</p>
+            <p> <input type="range" name="price" id="price" min="$32" max="$4,300+" step="2" value="32" /
+                    style="width: 180px;">
+                <output class="price-output" for="price"></output>
+            </p>
+            <p class="heading">Deals & Discounts</p>
+            <P>All Discounts</P>
+            <P>Today's Deals</P>
+
+            <p class="heading">Condition</p>
+            <p>New</p>
+            <p>Renewed</p>
+            <p>Used</p>
+
+            <p class="heading">Special Features</p>
+            <p>
+                <input type="checkbox" name="" id="Activity Tracker"><label for="Activity Tracker">Activity
+                    Tracker</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="Alarm Clock"><label for="Alarm Clock">Alarm Clock</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="Camera"><label for="Camera">Camera</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="GPS"><label for="GPS">GPS</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="Notifications"><label for="Notifications">Notifications</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="Phone Call"><label for="Phone Call">Phone Call</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="Text Messaging"><label for="Text Messaging">Text Messaging</label>
+            </p>
+
+            <p class="heading">Wearable Device Health & Fitness Features</p>
+
+            <p> <input type="checkbox" name="" id="Activity Tracker"><label for="Activity Tracker">Activity
+                    Tracker</label></p>
+
+            <p> <input type="checkbox" name="" id="Blood Pressure Monitor"><label for="Blood Pressure Monitor">Blood
+                    Pressure Monitor</label></p>
+
+            <p> <input type="checkbox" name="" id="Breath Monitor"><label for="Breath Monitor">Breath Monitor</label>
+            </p>
+
+            <p> <input type="checkbox" name="" id="Calorie Tracker"><label for="Calorie Tracker">Calorie Tracker</label>
+            </p>
+
+            <p> <input type="checkbox" name="" id="Distance Tracker"><label for="Distance Tracker">Distance
+                    Tracker</label></p>
+
+            <p> <input type="checkbox" name="" id="Elevation Tracker"><label for="Elevation Tracker">Elevation
+                    Tracker</label></p>
+
+            <p> <input type="checkbox" name="" id="Heart Rate Monitor"><label for="Heart Rate Monitor">Heart Rate
+                    Monitor</label></p>
+
+
+
+            <p class="heading">Compatible Phone Models</p>
+
+            <p><input type="checkbox" name="" id="Android Devices"><label for="Android Devices">Android Devices</label>
+            </p>
+
+            <p><input type="checkbox" name="" id="iOS Devices"><label for="iOS Devices">iOS Devices</label></p>
+
+
+            <p class="heading">Controller Type</p>
+
+            <p><input type="checkbox" name="" id="Amazon Alexa"><label for="Amazon Alexa">Amazon Alexa</label></p>
+
+            <p><input type="checkbox" name="" id="Google Assistant"><label for="Google Assistant">Google Assistant</label></p>
+
+            <p><input type="checkbox" name="" id="Siri"><label for="Siri">Siri</label></p>
+        </div>
+
+
+        <div class="stock">
+            <p class="head-result">Result</p>
+            <p>Check each product page for other buying options.</p>
+
+            <div class="p-box1 p-box">
+                <div class="p-img p-img1 watchsec" style="background-image: url('watch1.webp');"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">Smart Watch, 1.91"Smartwatch for Men Women (Answer/Make Call), Fitness
+                            Tracker with 100+ Sport Modes, IP68 Waterproof, Heart Rate/Sleep Monitor,...</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$39.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-box2 p-box">
+                <div class="p-img p-img2 watchsec" style="background-image: url('watch2.webp');"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">Apple Watch SE (2nd Gen) [GPS 40mm] Smartwatch with Starlight Aluminum
+                            Case with Starlight Sport Band S/M. Fitness & Sleep Tracker, Crash Detection,...</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$88.88 </p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-box3 p-box">
+                <div class="p-img p-img3 watchsec" style="background-image: url('watch3.jpg');"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">Smart Watch for Men (3 Straps) Answer/Make Calls,1.43'' AMOLED
+                            Always-on Display,110+ Sports Modes Fitness Watch with Sleep Monitor/SpO2/Heart</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$190.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-box4 p-box">
+                <div class="p-img p-img4 watchsec" style="background-image: url('watch4.jpg');"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">Military Smart Watch for Men with Call LED Flashlight 3ATM Waterproof
+                            2.02" Large Screen Rugged Tactical Smartwatch with Compass Fitness Watch with...</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$49.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-box5 p-box">
+                <div class="p-img p-img5 watchsec" style="background-image: url('watch5.jpg');"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">AMAZTIM Smart Watch, 60 Days Extra-Long Battery, 50M Waterproof, Rugged
+                            Military Bluetooth Call(Answer/Dial Calls),1.85" Ultra Large HD Display, AI Voice</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">1K+ bought in past month</p>
+                    <p class="p-price">$99.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="p-box6 p-box">
+                <div class="p-img p-img6 watchsec" style="background-image: url('watch6.jpg');"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">Smart Watch for Women Fitness Tracker: Gold Smart Watches for Women
+                            Digital Mens watches Make/Answer Call Waterproof Running Smartwatch...</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">1K+ bought in past month</p>
+                    <p class="p-price">$59.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+            <hr style="margin: 10px 0px;">
+
+            <p class="need-help">Need help?</p>
+            <p class="help-sec"><a href="">Visit the help section</a> or <a href="">contact us</a></p>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div class="back-to-top"><a href="dop.html">BACK TO TOP</a></div>
+
+        <div class="footer-ops">
+            <div class="foot-box">
+                <div class="b1 b">
+                    <h3>Careers</h3>
+                    <p>Blog</p>
+                    <p>About HK TECH</p>
+                    <p>Investor Relations</p>
+                </div>
+                <div class="b2 b">
+                    <h3>Make Money with Us</h3>
+                    <p>Sell products on HK TECH</p>
+                    <p>Sell on HK TECH Business</p>
+                    <p>Sell apps on HK TECH</p>
+                    <p>Become an Affiliate</p>
+                </div>
+                <div class="b3 b">
+                    <h3>HK TECH Payment Products</h3>
+                    <p>HK TECH Business Card</p>
+                    <p>Shop with Points</p>
+                    <p>Reload Your Balance</p>
+                    <p>HK TECH Currency Converter</p>
+                </div>
+                <div class="b4 b">
+                    <h3>Let Us Help You</h3>
+                    <p>HK TECH and COVID-19</p>
+                    <p>Your Account</p>
+                    <p>Your Orders</p>
+                    <p>Shipping Rates & Policies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrights">
+            <p>Conditions of Use</p>
+            <p>Privacy Notice</p>
+            <p>Consumer Health Data Privacy Disclosure</p>
+            <p>Your Ads Privacy Choices</p><br>
+        </div>
+        <div class="footline">© 1996-2024, hktech.com, Inc. or its affiliates</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

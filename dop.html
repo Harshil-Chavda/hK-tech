@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>HK TECH.com</title>
+</head>
+
+<body>
+    <header>
+        <div class="navber">
+            <div class="nav-logo border">
+                <div class="logo">
+                    <a href="index.html">HK TECH</a>
+                </div>
+            </div>
+            <div class="nav-adders border">
+                <div class="nav-adders-item">
+                    <div class="first nav-line-1">
+                        <Pre>    Deliver to</Pre>
+                    </div>
+                    <div class="second nav-line-2">
+                        <i class="fa-solid fa-location-dot"></i> <span><b>India</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-search border">
+                <select class="search-select">
+                    <option value="text">All</option>
+                    <!-- <option value="text">Arts & Crafts</option>
+                    <option value="text">Automotive</option>
+                    <option value="text">Baby</option>
+                    <option value="text">Beauty & Personal Care</option>
+                    <option value="text">Books</option>
+                    <option value="text">Boy's Fashion</option>
+                    <option value="text">Computers</option>
+                    <option value="text">Deals</option>
+                    <option value="text">Digital Music</option>
+                    <option value="text">Electronics</option>
+                    <option value="text">Girls' Fashion</option>
+                    <option value="text">Home & Kitchen</option>
+                    <option value="text">Industrial & Scientific</option>
+                    <option value="text">Kindle Store</option>
+                    <option value="text">Men's Fashion</option>
+                    <option value="text">Movies & TV</option>
+                    <option value="text">Music, CDs & Vinyl</option>
+                    <option value="text">Pet Supplies</option>
+                    <option value="text">Prime Video</option>
+                    <option value="text">Sports & Outdoors</option>
+                    <option value="text">Tools & Home Improvement</option>
+                    <option value="text">Toys & Games</option>
+                    <option value="text">Video Games</option>
+                    <option value="text">Women's Fashion</option> -->
+                </select>
+                <input type="text" placeholder="Scarch HK TECH" class="search-input">
+                <div class="search-icon">
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-language border">
+                <select class="language">
+                    <option class="langs">EN</option>
+                    <option class="langs">HINDI</option>
+                    <option class="langs">ENGLISH</option>
+                </select>
+            </div>
+            <div class="nav-signin border">
+                <a href="sign-up.html"><span class="box5line2 nav-line-2">sign in</span></a>
+            </div>
+            <div class="nav-order border">
+                <p class="nav-line-1">Return</p>
+                <p class="nav-line-2">& Order</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                <span class="nav-line-2"> <a href="cart.html"
+                        style="color: white; text-decoration: none;">Cart</a></span>
+            </div>
+        </div>
+
+
+        <div class="subnavbar">
+            <div class="sub-manu">
+                <i class="fa-solid fa-bars"></i><span> All</span>
+            </div>
+            <div class="sub-ops">
+                <a href="TD.html">Today's Deals</a>
+                <a href="CS.html">Customer Service</a>
+                <a href="registry.html">Registry</a>
+                <a href="GC.html">Gift Cards</a>
+                <a href="sell.html">Sell</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="DOP">
+        <div class="filter-ops">
+            <i class="fa-solid filter2 fa-filter" onclick="add_show()"></i>
+            <p class="heading">Recently used filters</p>
+            <p>All Discounts</p>
+            <hr>
+            <p class="heading">Department</p>
+            <p>Computers & Accessories</p>
+            <p>Tower Computers</p>
+            <p>Mini Computers</p>
+
+
+            <p class="heading">Customer Reviews</p>
+            <p>4 Stars & Up</p>
+
+            <p class="heading">Brands</p>
+            <p>
+                <input type="checkbox" name="" id="dell"><label for="dell">Dell</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="hp"><label for="hp">HP</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="lenovo"><label for="lenovo">Lenovo</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="sg"><label for="sg">Skytech Gaming</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="acer"><label for="acer">acer</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="ASUS"><label for="ASUS">ASUS</label>
+            </p>
+            <p>
+
+                <input type="checkbox" name="" id="MSI"><label for="MSI">MSI</label>
+            </p>
+            <P class="heading">All Top Brands</P>
+            <p>
+                <input type="checkbox" name="" id="top-brand"><label for="top-brand">Top-Brand</label>
+            </p>
+            <p class="heading">Price</p>
+            <p class="heading">$32-$4,300+</p>
+            <p>  <input
+                  type="range"
+                  name="price"
+                  id="price"
+                  min="$32"
+                  max="$4,300+"
+                  step="2"
+                  value="32"/
+                  style="width: 180px;">
+                <output class="price-output" for="price"></output></p>
+            <p class="heading">Deals & Discounts</p>
+            <P>All Discounts</P>
+            <P>Today's Deals</P>
+
+            <p class="heading">Condition</p>
+            <p>New</p>
+            <p>Renewed</p>
+            <p>Used</p>
+
+            <p class="heading">Computer Processor Type</p>
+            <p>
+                <input type="checkbox" name="" id="AAS"><label for="AAS">AMD A-Series</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="AA"><label for="AA">AMD Athlon</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="AF"><label for="AF">AMD FX</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="AR5"><label for="AR5">AMD Ryzen 5</label>
+            </p>
+            <p>
+                <input type="checkbox" name="" id="AR7"><label for="AR7">AMD Ryzen 7</label>
+            </p>
+
+            <p class="heading">Computer Processor Count</p>
+
+            <p> <input type="checkbox" name="" id="CPC1"><label for="CPC1">1</label></p>
+
+            <p> <input type="checkbox" name="" id="CPC2"><label for="CPC2">2</label></p>
+
+            <p> <input type="checkbox" name="" id="CPC4"><label for="CPC4">4</label></p>
+
+            <p> <input type="checkbox" name="" id="CPC6"><label for="CPC6">6</label></p>
+
+            <p> <input type="checkbox" name="" id="CPC8"><label for="CPC8">8</label></p>
+
+            <p> <input type="checkbox" name="" id="CPC10"><label for="CPC10">10</label></p>
+
+            <p> <input type="checkbox" name="" id="CPC12"><label for="CPC12">12</label></p>
+
+
+
+            <p class="heading">CPU Manufacturer</p>
+
+            <p><input type="checkbox" name="" id="AMD"><label for="AMD">AMD</label></p>
+
+            <p><input type="checkbox" name="" id="Intel"><label for="Intel">Intel</label></p>
+        </div>
+
+
+        <div class="stock">
+            <p class="head-result">Result</p>
+            <p>Check each product page for other buying options.</p>
+
+            <div class="p-box1 p-box">
+                <div class="p-img p-img1"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$190.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-box2 p-box">
+                <div class="p-img p-img2"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">AMD Ryzen 5 5500 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$88.88 </p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-box3 p-box">
+                <div class="p-img p-img3"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">AMD Ryzen 5 7600X 6-Core, 12-Thread Unlocked Desktop Processor</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$190.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+            
+
+
+            <div class="p-box4 p-box">
+                <div class="p-img p-img4"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$190.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-box5 p-box">
+                <div class="p-img p-img5"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$190.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="p-box6 p-box">
+                <div class="p-img p-img6"></div>
+                <div class="p-desc">
+                    <p class="p-name"><a href="">AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor</a></p>
+                    <P class="P-rate"></P>
+                    <p class="sub-msg">3K+ bought in past month</p>
+                    <p class="p-price">$190.00</p>
+                    <p class="p-STI">Ships to India</p>
+                    <p class="p-deli-time">Delivery Thu, Jul 25</p>
+                    <p class="ATC"><button>Add to Cart</button></p>
+                    <p class="MBC">More Buying Choices</p>
+                </div>
+            </div>
+
+            <hr style="margin: 10px 0px;">
+
+            <p class="need-help">Need help?</p>
+            <p class="help-sec"><a href="">Visit the help section</a> or <a href="">contact us</a></p>
+        </div>
+        
+    </main>
+
+
+
+    <footer>
+        <div class="back-to-top"><a href="dop.html">BACK TO TOP</a></div>
+
+        <div class="footer-ops">
+            <div class="foot-box">
+                <div class="b1 b">
+                    <h3>Careers</h3>
+                    <p>Blog</p>
+                    <p>About HK TECH</p>
+                    <p>Investor Relations</p>
+                </div>
+                <div class="b2 b">
+                    <h3>Make Money with Us</h3>
+                    <p>Sell products on HK TECH</p>
+                    <p>Sell on HK TECH Business</p>
+                    <p>Sell apps on HK TECH</p>
+                    <p>Become an Affiliate</p>
+                </div>
+                <div class="b3 b">
+                    <h3>HK TECH Payment Products</h3>
+                    <p>HK TECH Business Card</p>
+                    <p>Shop with Points</p>
+                    <p>Reload Your Balance</p>
+                    <p>HK TECH Currency Converter</p>
+                </div>
+                <div class="b4 b">
+                    <h3>Let Us Help You</h3>
+                    <p>HK TECH and COVID-19</p>
+                    <p>Your Account</p>
+                    <p>Your Orders</p>
+                    <p>Shipping Rates & Policies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrights">
+            <p>Conditions of Use</p>
+            <p>Privacy Notice</p>
+            <p>Consumer Health Data Privacy Disclosure</p>
+            <p>Your Ads Privacy Choices</p><br>
+        </div>
+        <div class="footline">© 1996-2024, hktech.com, Inc. or its affiliates</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
